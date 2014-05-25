@@ -12,14 +12,15 @@ public interface List {
     public void add(Object o);
     public void addFirst(Object o);
     public void addLast(Object o);
-    public void add(int index, Object element);
+    public void add(int index, Object element) throws Exception;
     
-    public Object remove(int index);
-    public Object removeFirst();
-    public Object removeLast();
-    public boolean remove(Object o);
+    public Object remove(int index)throws Exception;
+    public Object removeFirst()throws Exception;
+    public Object removeLast()throws Exception;
+    public boolean remove(Object o)throws Exception;
             
-    public Object set(int index, Object element);          
+    public Object set(int index, Object element)throws Exception;          
+    public Object get(int index)throws Exception; 
     
     public int size();
     public Object[] toArray();
